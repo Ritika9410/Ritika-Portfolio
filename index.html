@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for a third-year ABE undergraduate at Institute of Technology, focused on DSA, web development, prompt engineering, and FitLife."
+    />
+    <title>Ritika | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input class="theme-control" type="checkbox" id="theme-toggle" aria-label="Enable dark mode" />
+    <input class="menu-control" type="checkbox" id="menu-toggle" aria-label="Open navigation" />
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Ritika portfolio home">
+        <span class="brand-mark">R</span>
+        <span>Ritika</span>
+      </a>
+
+      <div class="header-actions">
+        <label class="theme-toggle" for="theme-toggle" title="Toggle dark mode">
+          <span class="theme-sun">Light</span>
+          <span class="theme-moon">Dark</span>
+        </label>
+
+        <label class="nav-toggle" for="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <label class="menu-scrim" for="menu-toggle" aria-hidden="true"></label>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal reveal-one">
+          <p class="eyebrow">ABES Institute of Technology - Class of 2028</p>
+          <h1>Building consistent habits in code, design, and problem solving.</h1>
+          <p class="hero-text">
+            I am a third-year undergraduate growing through DSA, web development, prompt
+            engineering, and vibe coding. My current focus is to build useful digital experiences
+            with clean front-end foundations and steady practice.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#project">View FitLife</a>
+            <a class="button secondary" href="#skills">Explore Skills</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-two" aria-label="Portfolio progress summary">
+          <div class="profile-orbit">
+            <div class="portrait-card">
+              <span class="portrait-initial">R</span>
+              <p>Front-end Developer</p>
+            </div>
+            <div class="floating-stat stat-one">
+              <strong>50</strong>
+              <span>Day DSA Badge</span>
+            </div>
+            <div class="floating-stat stat-two">
+              <strong>2028</strong>
+              <span>Graduation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="about">
+        <div class="reveal">
+          <p class="section-kicker">About Me</p>
+          <h2>A curious student building one skill layer at a time.</h2>
+        </div>
+        <div class="about-copy reveal reveal-two">
+          <p>
+            I study ABE at Institute of Technology and I am currently in my third undergraduate
+            year. I like learning through consistent practice, especially when a concept turns into
+            a working interface or a cleaner algorithm.
+          </p>
+          <p>
+            Alongside DSA, I am developing my HTML, CSS, and JavaScript skills. I also explore
+            prompt engineering, vibe coding, Git, GitHub, and command-line workflows so I can move
+            confidently from idea to implementation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section highlights" aria-label="Portfolio highlights">
+        <article class="highlight-card reveal">
+          <span class="highlight-number">50</span>
+          <h3>Day DSA Badge</h3>
+          <p>Consistent practice in data structures, algorithms, and problem-solving discipline.</p>
+        </article>
+        <article class="highlight-card reveal reveal-two">
+          <span class="highlight-number">3rd</span>
+          <h3>Undergraduate Year</h3>
+          <p>ABE student at Institute of Technology, preparing for graduation in 2028.</p>
+        </article>
+        <article class="highlight-card reveal reveal-three">
+          <span class="highlight-number">1</span>
+          <h3>Featured Project</h3>
+          <p>FitLife, a student fitness tracker concept built with front-end technologies.</p>
+        </article>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skills</p>
+          <h2>My current toolkit</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">DS</div>
+            <h3>DSA</h3>
+            <p>Practicing consistently and strengthening logic through daily problem solving.</p>
+          </article>
+          <article class="skill-card reveal reveal-two">
+            <div class="skill-icon">FE</div>
+            <h3>Front-end Web</h3>
+            <p>Creating responsive pages with HTML, CSS, JavaScript, layout systems, and UI polish.</p>
+          </article>
+          <article class="skill-card reveal reveal-three">
+            <div class="skill-icon">AI</div>
+            <h3>Prompt Engineering</h3>
+            <p>Exploring how precise prompts, iteration, and vibe coding can speed up creative builds.</p>
+          </article>
+          <article class="skill-card reveal reveal-four">
+            <div class="skill-icon">Git</div>
+            <h3>Git & GitHub</h3>
+            <p>Using version control, terminal commands, repositories, and collaborative workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section project-section" id="project">
+        <div class="project-copy reveal">
+          <p class="section-kicker">Featured Project</p>
+          <h2>FitLife</h2>
+          <p>
+            FitLife is a fitness app tracker concept for students. I contributed as a front-end
+            developer and helped present the idea: a student-friendly tool that suggests exercises
+            based on mood and supports healthier nutrition choices.
+          </p>
+          <ul class="project-list">
+            <li>Built with HTML, CSS, and JavaScript.</li>
+            <li>Suggests exercises based on a student's mood.</li>
+            <li>Estimates calories and protein needs using body details.</li>
+            <li>Adapts suggestions for vegetarian and non-vegetarian food preferences.</li>
+          </ul>
+          <div class="project-actions">
+            <a class="button primary" href="https://fitlife-student.netlify.app/" target="_blank" rel="noreferrer">Visit FitLife</a>
+          </div>
+        </div>
+
+        <figure class="fitlife-shot reveal reveal-two" id="fitlife-preview">
+          <figcaption>FitLife screenshot preview</figcaption>
+          <div class="fitlife-screen" aria-label="FitLife dashboard screenshot preview">
+            <div class="fitlife-title">
+              <strong>FitLife</strong>
+              <span>Your holistic wellness companion</span>
+            </div>
+            <div class="balance-panel">
+              <div class="score-ring">
+                <strong>67</strong>
+                <span>/100</span>
+              </div>
+              <div class="balance-copy">
+                <h3>Mind-Body Balance Score</h3>
+                <div class="status-card status-good">
+                  <span>+</span>
+                  <p><strong>Physical health is improving</strong>Keep up the great work!</p>
+                </div>
+                <div class="status-card status-warn">
+                  <span>!</span>
+                  <p><strong>Sleep is dropping</strong>Suggested: 10-min evening yoga</p>
+                </div>
+                <a class="fitlife-cta" href="https://fitlife-student.netlify.app/" target="_blank" rel="noreferrer">Update Score</a>
+              </div>
+            </div>
+            <div class="fitlife-nav">
+              <span>Home</span>
+              <span>Mood</span>
+              <span>Mode</span>
+              <span>Login</span>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Learning Path</p>
+          <h2>What I am building next</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>Now</span>
+            <p>Deepening DSA practice while improving JavaScript fundamentals.</p>
+          </div>
+          <div class="timeline-item reveal reveal-two">
+            <span>Next</span>
+            <p>Building more front-end projects with better structure, accessibility, and deployment.</p>
+          </div>
+          <div class="timeline-item reveal reveal-three">
+            <span>2028</span>
+            <p>Graduating with a stronger project portfolio and practical development confidence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band reveal" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Open to learning, building, and collaborating.</h2>
+        </div>
+        <a class="button primary" href="#home">Back to Intro</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed and built by Ritika.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+  </body>
+</html>
